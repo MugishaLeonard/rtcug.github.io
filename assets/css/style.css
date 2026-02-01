@@ -60,6 +60,26 @@ img {
   max-width: 100%;
 }
 
+/* Image zoom on hover */
+.gallery .gallery-item a,
+.serv-cove,
+.causes .caus-img {
+  display: block;
+  overflow: hidden;
+}
+.gallery .gallery-item a img,
+.serv-cove img,
+.causes .caus-img img {
+  transition: transform 0.4s ease;
+  display: block;
+  width: 100%;
+}
+.gallery .gallery-item a:hover img,
+.serv-cove:hover img,
+.causes .caus-img:hover img {
+  transform: scale(1.08);
+}
+
 a {
   text-decoration: none;
   outline: none;
